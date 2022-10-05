@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <link rel="stylesheet" type="text/css" href="reset.css">
+        <link rel="stylesheet" type="text/css" href="estilos.css">
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+
+        <h1>Calculadora</h1>
+
+        <div>
+            <form name="form_calc" class="form_calc">
+                <input type="text" name="visor" value="0" disabled/>
+                <br>
+                <input class="botoes" type="button" value="9" onclick="adicionar(9);" />
+                <input class="botoes" type="button" value="8" onclick="adicionar(8);" />
+                <input class="botoes" type="button" value="7" onclick="adicionar(7);" />
+                <input class="botoes" type="button" value="/" onclick="operador('/');" />
+                <br>
+                <input class="botoes" type="button" value="4" onclick="adicionar(4);" />
+                <input class="botoes" type="button" value="5" onclick="adicionar(5);" />
+                <input class="botoes" type="button" value="6" onclick="adicionar(6);" />
+                <input class="botoes" type="button" value="x" onclick="operador('*');" />
+                <br>
+                <input class="botoes" type="button" value="3" onclick="adicionar(3);" />
+                <input class="botoes" type="button" value="2" onclick="adicionar(2);" />
+                <input class="botoes" type="button" value="1" onclick="adicionar(1);" />
+                <input class="botoes" type="button" value="+" onclick="operador('+');" />
+                <br>
+                <input class="botoes" type="button" value="0" onclick="adicionar(0);" />
+                <input class="reset" type="button" class="reset" value="Reset" onclick="myreset();" />
+                <input class="botoes" type="button" value="-" onclick="operador('-');" />
+                <br>
+                <input class="igual" type="button" class="igual" value="=" onclick="calcular('');" />
+            </form>
+        </div>    
+        
+        <script type="text/javascript" src="calculadora.js"></script>
+
+    </body>
+
+</html
